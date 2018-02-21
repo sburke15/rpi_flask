@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\static"
+    "\\static",
+    "\\static\\css",
+    "\\templates"
   ],
+  "SelectedNode": "\\static\\css\\bootstrap.min.css",
   "PreviewInSolutionExplorer": false
 }
