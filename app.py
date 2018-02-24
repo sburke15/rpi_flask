@@ -2,7 +2,6 @@ from flask import Flask, render_template, Response
 from importlib import import_module
 import os
 from camera import Camera
-camera = PiCamera()
 
 app = Flask(__name__)
 
