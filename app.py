@@ -1,11 +1,9 @@
 from flask import Flask, render_template, Response
 from importlib import import_module
 import os
+from picamera import PiCamera
 
-if os.environ.get('CAMERA'):
-    Camera = import_module('camera_' + os.environ['CAMERA']).Camera
-else:
-    from camera import Camera
+camera = PiCamera()
 
 app = Flask(__name__)
 
