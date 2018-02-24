@@ -11,7 +11,7 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
-def gen(Camera):
+def gen(camera):
     """Video Streaming generator function"""
     while True:
         frame = camera.get_frame()
