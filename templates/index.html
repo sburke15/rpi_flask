@@ -1,9 +1,19 @@
-<html>
-  <head>
-    <title>Video Streaming Demonstration</title>
-  </head>
-  <body>
+{% extends "base.html" %}
+
+<!--
+{% block page_content %}
+
     <h1>Video Streaming Demonstration</h1>
-    <img src="{{ url_for('video_feed') }}">
-  </body>
-</html>
+   <img src="{{ url_for('video_feed') }}">
+    <h1>Hellow World!</h1>
+
+{ % endblock %}
+-->
+
+
+
+{% block page_content %}
+<div class="page-header">
+    <h1>Hello World!</h1>
+</div>
+{% endblock %}

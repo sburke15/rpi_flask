@@ -1,4 +1,4 @@
-from flask import Flask, render_template, Response
+from flask import Flask, render_template, Response,redirect
 from importlib import import_module
 import os
 from camera import Camera
@@ -9,7 +9,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return render_template('base.html')
 
 def gen(camera):
     """Video Streaming generator function"""
@@ -21,7 +21,4 @@ def gen(camera):
 def video_feed():
     """video streaming route. put this in the src attribute of an img tag"""
     return Response(gen(Camera()), mimetype='multipart/x-mixed-replace; boundary=frame')
-
-if __name__ == '__main__':
-    app.run(debug=False, host='0.0.0.0', threaded=True)
 
