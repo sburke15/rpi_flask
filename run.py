@@ -7,4 +7,4 @@ from flask_app import app as app2
 app = DispatcherMiddleware(server, {'/myflaskapp': app2})
 
 if __name__ == '__main__':
-    run_simple('127.0.0.1', 5000, app, use_reloader=False, debug=False)
+run_simple('127.0.0.1', 5000, app, use_reloader=False, use_debugger=False)
