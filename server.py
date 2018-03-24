@@ -4,4 +4,4 @@ server = Flask(__name__)
 
 @server.route('/')
 def server_root():
-    return render_template('base.html')
+    return render_template('index.html')
