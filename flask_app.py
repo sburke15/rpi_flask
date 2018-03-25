@@ -1,7 +1,7 @@
 from flask import Flask, render_template, Response,redirect
 from importlib import import_module
 import os
-from camera import Camera
+from camera_pi import Camera
 
 app = Flask(__name__)
 
